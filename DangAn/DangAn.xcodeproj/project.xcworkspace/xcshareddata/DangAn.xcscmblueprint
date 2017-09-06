@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++1773" : {
+
+    },
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++5147" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++1773" : 0,
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++5147" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "70F3F788-3F6C-46B7-8BFC-89DD3482B1DE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++1773" : "",
+    "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++5147" : "DangAn\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DangAn",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DangAn.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/gongzuoshiApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++1773"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/code.taobao.org\/svn\/gongzuoshiApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ec0135ee-492b-4e82-b3d2-b7d1fa96c1a3++5147"
+    }
+  ]
+}

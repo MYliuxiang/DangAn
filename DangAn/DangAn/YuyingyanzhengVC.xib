@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YuyingyanzhengVC">
+            <connections>
+                <outlet property="btn" destination="IOF-lm-yb0" id="jST-XV-PJH"/>
+                <outlet property="shuzi" destination="q7X-Uh-U5x" id="bNr-KF-HXt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yuyintitle" destination="Kwr-Jj-VuD" id="wJn-eh-XT8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kd-kN-ptk">
+                    <rect key="frame" x="0.0" y="65" width="375" height="0.5"/>
+                    <color key="backgroundColor" red="0.7788431187" green="0.7788431187" blue="0.7788431187" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="w6b-TQ-1H3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请按住按钮，贴近手机下方话筒，匀速读出数字" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwr-Jj-VuD">
+                    <rect key="frame" x="40" y="104" width="295" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7X-Uh-U5x">
+                    <rect key="frame" x="0.0" y="150" width="375" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="1" green="0.73056859790465101" blue="0.30948181921054452" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IOF-lm-yb0" customClass="D3RecordButton">
+                    <rect key="frame" x="59" y="180" width="256" height="256"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="256" id="Y4m-VK-KgK"/>
+                        <constraint firstAttribute="width" constant="256" id="raC-Iw-VDA"/>
+                    </constraints>
+                    <state key="normal" image="声音识别动画 0"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9Kd-kN-ptk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="3sU-4q-0w9"/>
+                <constraint firstItem="Kwr-Jj-VuD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="6vS-sm-zuN"/>
+                <constraint firstAttribute="trailing" secondItem="Kwr-Jj-VuD" secondAttribute="trailing" constant="40" id="GeR-pm-fh8"/>
+                <constraint firstAttribute="trailing" secondItem="9Kd-kN-ptk" secondAttribute="trailing" id="IAR-lt-fnD"/>
+                <constraint firstItem="9Kd-kN-ptk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ITR-xR-gAg"/>
+                <constraint firstItem="Kwr-Jj-VuD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="JT8-7I-awE"/>
+                <constraint firstItem="IOF-lm-yb0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PGd-T8-f2i"/>
+                <constraint firstItem="IOF-lm-yb0" firstAttribute="top" secondItem="q7X-Uh-U5x" secondAttribute="bottom" constant="30" id="PTq-hz-mSi"/>
+                <constraint firstAttribute="trailing" secondItem="q7X-Uh-U5x" secondAttribute="trailing" id="QUd-jJ-Xk4"/>
+                <constraint firstItem="q7X-Uh-U5x" firstAttribute="top" secondItem="Kwr-Jj-VuD" secondAttribute="bottom" constant="25" id="VYf-EZ-EIt"/>
+                <constraint firstItem="q7X-Uh-U5x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yGB-Qx-KXW"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="51.5" y="253.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="声音识别动画 0" width="256" height="256"/>
+    </resources>
+</document>

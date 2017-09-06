@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ShimiView" id="Qpd-YJ-lc7" customClass="ShimiView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="档案封面于名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ga6-5N-3o1">
+                    <rect key="frame" x="8" y="10" width="359" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="4RP-Ns-80b"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGd-f3-trf">
+                    <rect key="frame" x="187" y="188" width="187.5" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="H0p-6g-jyN"/>
+                    </constraints>
+                    <state key="normal" title="去设置"/>
+                    <connections>
+                        <action selector="DoneAction:" destination="Qpd-YJ-lc7" eventType="touchUpInside" id="5t2-W4-3pr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TqR-AF-JPE">
+                    <rect key="frame" x="0.0" y="188" width="187.5" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XRY-Zk-bn3"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="CanceAction:" destination="Qpd-YJ-lc7" eventType="touchUpInside" id="fwf-vN-uLO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZM-hP-Sab">
+                    <rect key="frame" x="155" y="56" width="65" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="WgK-UZ-CFa"/>
+                        <constraint firstAttribute="height" constant="50" id="wdY-kg-TRw"/>
+                    </constraints>
+                    <state key="normal" image="私密文件夹"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置为私密档案后，只有通过语音才能解锁查看内容" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NT-vM-2UK">
+                    <rect key="frame" x="20" y="131" width="335" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3NT-vM-2UK" firstAttribute="leading" secondItem="Qpd-YJ-lc7" secondAttribute="leading" constant="20" id="0k7-i6-4wv"/>
+                <constraint firstItem="TqR-AF-JPE" firstAttribute="top" secondItem="3NT-vM-2UK" secondAttribute="bottom" constant="40" id="8PK-RG-Nom"/>
+                <constraint firstItem="3NT-vM-2UK" firstAttribute="top" secondItem="AZM-hP-Sab" secondAttribute="bottom" constant="25" id="9oE-2E-fLX"/>
+                <constraint firstItem="AZM-hP-Sab" firstAttribute="centerX" secondItem="Qpd-YJ-lc7" secondAttribute="centerX" id="A4r-Ti-Ugh"/>
+                <constraint firstAttribute="trailing" secondItem="3NT-vM-2UK" secondAttribute="trailing" constant="20" id="BoD-cD-3vb"/>
+                <constraint firstItem="Ga6-5N-3o1" firstAttribute="leading" secondItem="Qpd-YJ-lc7" secondAttribute="leading" constant="8" id="Dge-ph-2jn"/>
+                <constraint firstAttribute="trailing" secondItem="Ga6-5N-3o1" secondAttribute="trailing" constant="8" id="H0B-Ym-q4Y"/>
+                <constraint firstAttribute="trailing" secondItem="cGd-f3-trf" secondAttribute="trailing" id="MBE-Wf-9Kb"/>
+                <constraint firstItem="AZM-hP-Sab" firstAttribute="top" secondItem="Ga6-5N-3o1" secondAttribute="bottom" constant="25" id="RQo-vO-Lfc"/>
+                <constraint firstItem="cGd-f3-trf" firstAttribute="leading" secondItem="TqR-AF-JPE" secondAttribute="trailing" id="Yhs-98-dtB"/>
+                <constraint firstItem="Ga6-5N-3o1" firstAttribute="top" secondItem="Qpd-YJ-lc7" secondAttribute="top" constant="10" id="gvu-Of-yhn"/>
+                <constraint firstItem="cGd-f3-trf" firstAttribute="top" secondItem="TqR-AF-JPE" secondAttribute="top" id="juB-cR-nk4"/>
+                <constraint firstItem="cGd-f3-trf" firstAttribute="width" secondItem="TqR-AF-JPE" secondAttribute="width" id="nNX-2Y-25q"/>
+                <constraint firstItem="TqR-AF-JPE" firstAttribute="leading" secondItem="Qpd-YJ-lc7" secondAttribute="leading" id="oI3-vS-mCI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_cance" destination="TqR-AF-JPE" id="iZi-fo-xwz"/>
+                <outlet property="btn_done" destination="cGd-f3-trf" id="LLH-Gh-ESA"/>
+                <outlet property="fengmian" destination="AZM-hP-Sab" id="TmM-q0-uIE"/>
+                <outlet property="lable_content" destination="3NT-vM-2UK" id="Iks-Yi-vVj"/>
+                <outlet property="lable_title" destination="Ga6-5N-3o1" id="id2-vf-NxO"/>
+            </connections>
+            <point key="canvasLocation" x="260.5" y="156.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="私密文件夹" width="65" height="50"/>
+    </resources>
+</document>

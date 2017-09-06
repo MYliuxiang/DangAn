@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="NewDAView" id="7f5-Fe-7iq" customClass="yemaView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="档案封面于名称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IsU-2L-nxF">
+                    <rect key="frame" x="8" y="15" width="359" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="N8C-aw-TY0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FuO-RG-vrR">
+                    <rect key="frame" x="20" y="86" width="334" height="1"/>
+                    <color key="backgroundColor" red="0.88938210230000003" green="0.88938210230000003" blue="0.88938210230000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="iZb-3S-fN5"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="档案数量" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I5f-Od-TZq">
+                    <rect key="frame" x="20" y="56" width="334" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gkT-fR-i5F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KdE-Dj-9Q3">
+                    <rect key="frame" x="20" y="107" width="334" height="45"/>
+                    <color key="backgroundColor" red="0.23607625234408092" green="0.49784578586046535" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="l8X-i0-Fh6"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="DoneAction:" destination="7f5-Fe-7iq" eventType="touchUpInside" id="zqR-Gw-gnc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FuO-RG-vrR" firstAttribute="leading" secondItem="7f5-Fe-7iq" secondAttribute="leading" constant="20" id="0S1-40-MeM"/>
+                <constraint firstAttribute="trailing" secondItem="I5f-Od-TZq" secondAttribute="trailing" constant="21" id="78c-XP-fuY"/>
+                <constraint firstItem="I5f-Od-TZq" firstAttribute="top" secondItem="IsU-2L-nxF" secondAttribute="bottom" constant="20" id="96Y-qZ-DC3"/>
+                <constraint firstItem="KdE-Dj-9Q3" firstAttribute="trailing" secondItem="I5f-Od-TZq" secondAttribute="trailing" id="9al-TB-W8I"/>
+                <constraint firstAttribute="trailing" secondItem="IsU-2L-nxF" secondAttribute="trailing" constant="8" id="Iwh-4u-XPm"/>
+                <constraint firstAttribute="trailing" secondItem="FuO-RG-vrR" secondAttribute="trailing" constant="21" id="LSD-Rp-h90"/>
+                <constraint firstItem="KdE-Dj-9Q3" firstAttribute="leading" secondItem="I5f-Od-TZq" secondAttribute="leading" id="N83-G8-HQO"/>
+                <constraint firstItem="I5f-Od-TZq" firstAttribute="leading" secondItem="7f5-Fe-7iq" secondAttribute="leading" constant="20" id="aAD-kI-MOo"/>
+                <constraint firstItem="KdE-Dj-9Q3" firstAttribute="top" secondItem="FuO-RG-vrR" secondAttribute="bottom" constant="20" id="bc4-4e-8zL"/>
+                <constraint firstItem="FuO-RG-vrR" firstAttribute="top" secondItem="I5f-Od-TZq" secondAttribute="bottom" id="glI-2G-Jsh"/>
+                <constraint firstItem="IsU-2L-nxF" firstAttribute="top" secondItem="7f5-Fe-7iq" secondAttribute="top" constant="15" id="jef-Lh-byw"/>
+                <constraint firstItem="IsU-2L-nxF" firstAttribute="leading" secondItem="7f5-Fe-7iq" secondAttribute="leading" constant="8" id="llC-zf-Ii0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_done" destination="KdE-Dj-9Q3" id="nda-Wf-UI8"/>
+                <outlet property="lable_title" destination="IsU-2L-nxF" id="prD-yQ-H1Q"/>
+                <outlet property="textField_num" destination="I5f-Od-TZq" id="ddn-28-9Du"/>
+            </connections>
+            <point key="canvasLocation" x="-142.5" y="237.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="KGk-i7-Jjw" customClass="AdressmangerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="周总" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvf-EO-69C">
+                        <rect key="frame" x="50" y="15" width="28" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18955555200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcO-1w-1W0">
+                        <rect key="frame" x="88" y="15" width="93" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="北京市顺义区通讯路" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEC-mk-BLW">
+                        <rect key="frame" x="50" y="42" width="204" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8z-nZ-bVv">
+                        <rect key="frame" x="264" y="0.0" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="Quo-l2-7a6"/>
+                            <constraint firstAttribute="width" constant="46" id="XDK-k5-fLC"/>
+                        </constraints>
+                        <state key="normal" title="编辑"/>
+                        <connections>
+                            <action selector="bianjiAC:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rb0-y4-f3E"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZ8-P0-IXe">
+                        <rect key="frame" x="50" y="57" width="219" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="219" id="JHk-t9-Uhl"/>
+                            <constraint firstAttribute="height" constant="15" id="TFQ-yx-2Y6"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="购物车已选择" translatesAutoresizingMaskIntoConstraints="NO" id="WfA-TP-01c">
+                        <rect key="frame" x="14" y="13" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="bEE-3W-UqH"/>
+                            <constraint firstAttribute="width" constant="22" id="yrs-7y-gov"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WfA-TP-01c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="0Iz-ax-yDM"/>
+                    <constraint firstAttribute="trailing" secondItem="A8z-nZ-bVv" secondAttribute="trailing" constant="10" id="7UP-th-Eeu"/>
+                    <constraint firstItem="Vvf-EO-69C" firstAttribute="centerY" secondItem="WfA-TP-01c" secondAttribute="centerY" id="Lzq-gz-qcg"/>
+                    <constraint firstItem="A8z-nZ-bVv" firstAttribute="baseline" secondItem="zcO-1w-1W0" secondAttribute="baseline" id="NDL-nQ-eDW"/>
+                    <constraint firstItem="xEC-mk-BLW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="42" id="OXJ-d5-Rp5"/>
+                    <constraint firstItem="Vvf-EO-69C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="42" id="QGa-yT-70Z"/>
+                    <constraint firstItem="Vvf-EO-69C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="anh-Ay-W8Z"/>
+                    <constraint firstItem="xEC-mk-BLW" firstAttribute="top" secondItem="zcO-1w-1W0" secondAttribute="bottom" constant="10" id="bxo-3h-Rtk"/>
+                    <constraint firstItem="A8z-nZ-bVv" firstAttribute="leading" secondItem="xEC-mk-BLW" secondAttribute="trailing" constant="10" id="cpJ-ZZ-dWe"/>
+                    <constraint firstItem="mZ8-P0-IXe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="42" id="hdU-5l-wmy"/>
+                    <constraint firstItem="Vvf-EO-69C" firstAttribute="leading" secondItem="WfA-TP-01c" secondAttribute="trailing" constant="14" id="iXK-Cd-f2n"/>
+                    <constraint firstItem="mZ8-P0-IXe" firstAttribute="top" secondItem="xEC-mk-BLW" secondAttribute="bottom" id="s4i-x7-DAH"/>
+                    <constraint firstItem="zcO-1w-1W0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="tyP-bQ-rgC"/>
+                    <constraint firstItem="zcO-1w-1W0" firstAttribute="leading" secondItem="Vvf-EO-69C" secondAttribute="trailing" constant="10" id="uM1-MH-88E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adressLabel" destination="xEC-mk-BLW" id="FYy-PG-YH2"/>
+                <outlet property="enderbutton" destination="A8z-nZ-bVv" id="6qT-a6-bRA"/>
+                <outlet property="phoneLabel" destination="zcO-1w-1W0" id="AdZ-mp-TeH"/>
+                <outlet property="stateImage" destination="WfA-TP-01c" id="25C-Wb-20D"/>
+                <outlet property="titleLabel" destination="Vvf-EO-69C" id="xCR-kl-41Y"/>
+            </connections>
+            <point key="canvasLocation" x="481" y="355.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="购物车已选择" width="22" height="22"/>
+    </resources>
+</document>

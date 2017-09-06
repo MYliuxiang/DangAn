@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderSureOneCellID" id="KGk-i7-Jjw" customClass="OrderSureOneCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXR-PG-OzP">
+                        <rect key="frame" x="15" y="10" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RsB-LJ-tvB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZF-l3-UAD">
+                        <rect key="frame" x="15" y="39" width="295" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="ZVm-Lc-UgK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="地址彩条" translatesAutoresizingMaskIntoConstraints="NO" id="9Gm-cy-lHE">
+                        <rect key="frame" x="0.0" y="97" width="320" height="7"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="psY-C2-kSc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Gm-cy-lHE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Rz-sb-tcD"/>
+                    <constraint firstItem="FZF-l3-UAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HDt-Tc-lsd"/>
+                    <constraint firstAttribute="trailing" secondItem="9Gm-cy-lHE" secondAttribute="trailing" id="Yp8-wC-pc9"/>
+                    <constraint firstAttribute="bottom" secondItem="9Gm-cy-lHE" secondAttribute="bottom" constant="0.5" id="d8o-f4-X8u"/>
+                    <constraint firstAttribute="trailing" secondItem="eXR-PG-OzP" secondAttribute="trailing" constant="1" id="gbC-vK-meu"/>
+                    <constraint firstItem="eXR-PG-OzP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="iDy-Ah-4DY"/>
+                    <constraint firstAttribute="trailing" secondItem="FZF-l3-UAD" secondAttribute="trailing" constant="10" id="lkS-ia-wcg"/>
+                    <constraint firstItem="FZF-l3-UAD" firstAttribute="top" secondItem="eXR-PG-OzP" secondAttribute="bottom" constant="8" id="mVn-kw-gFQ"/>
+                    <constraint firstItem="eXR-PG-OzP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="rU8-t6-WlG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lable_adree" destination="FZF-l3-UAD" id="xvq-Vt-1lS"/>
+                <outlet property="lable_name" destination="eXR-PG-OzP" id="aWH-9c-j0a"/>
+            </connections>
+            <point key="canvasLocation" x="324" y="452.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="地址彩条" width="320" height="7"/>
+    </resources>
+</document>

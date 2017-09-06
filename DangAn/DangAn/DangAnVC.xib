@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DangAnVC">
+            <connections>
+                <outlet property="segmmentVC" destination="Kcd-YS-YNt" id="NNH-uA-usw"/>
+                <outlet property="tableView" destination="MY1-w0-7bA" id="BsQ-kI-Bwv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaX-sg-aGZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kcd-YS-YNt">
+                            <rect key="frame" x="30" y="10" width="315" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="xrs-Vn-fOq"/>
+                            </constraints>
+                            <segments>
+                                <segment title="按文件名称排序"/>
+                                <segment title="按添加日期排序"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2Lz-7d-6gY"/>
+                        <constraint firstItem="Kcd-YS-YNt" firstAttribute="top" secondItem="oaX-sg-aGZ" secondAttribute="top" constant="10" id="Rkv-Ui-BLx"/>
+                        <constraint firstItem="Kcd-YS-YNt" firstAttribute="leading" secondItem="oaX-sg-aGZ" secondAttribute="leading" constant="30" id="UqX-Rn-wit"/>
+                        <constraint firstAttribute="trailing" secondItem="Kcd-YS-YNt" secondAttribute="trailing" constant="30" id="oOU-CH-hMW"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="MY1-w0-7bA">
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jCy-MX-QJ8"/>
+                        <outlet property="delegate" destination="-1" id="fm2-bh-Xal"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MY1-w0-7bA" secondAttribute="trailing" id="2UY-Aa-OtQ"/>
+                <constraint firstAttribute="bottom" secondItem="MY1-w0-7bA" secondAttribute="bottom" id="4yw-LW-jrX"/>
+                <constraint firstItem="oaX-sg-aGZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GkG-SA-AbD"/>
+                <constraint firstItem="oaX-sg-aGZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JtS-hO-meN"/>
+                <constraint firstAttribute="trailing" secondItem="oaX-sg-aGZ" secondAttribute="trailing" id="VoF-MU-DGP"/>
+                <constraint firstItem="MY1-w0-7bA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pyv-vr-7bR"/>
+                <constraint firstItem="MY1-w0-7bA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="50" id="yDN-OB-95l"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="-8.5" y="346.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYdanganVC">
+            <connections>
+                <outlet property="btu_add" destination="vXD-tg-HlD" id="w9c-YZ-69e"/>
+                <outlet property="footView" destination="1ti-0N-jnF" id="Psk-La-sPk"/>
+                <outlet property="hederView" destination="24W-4T-hkq" id="DvJ-kD-Ep9"/>
+                <outlet property="lable_head" destination="Iq9-KQ-wBf" id="0ri-1M-Qsk"/>
+                <outlet property="tableView" destination="JB8-Ca-ZOK" id="0Zq-5W-a1N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JB8-Ca-ZOK">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fE4-6y-cxd"/>
+                        <outlet property="delegate" destination="-1" id="jy5-Y2-Xc0"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="JB8-Ca-ZOK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="aIX-bp-IlJ"/>
+                <constraint firstAttribute="trailing" secondItem="JB8-Ca-ZOK" secondAttribute="trailing" id="bsq-61-Nuc"/>
+                <constraint firstAttribute="bottom" secondItem="JB8-Ca-ZOK" secondAttribute="bottom" id="w3A-GK-Vid"/>
+                <constraint firstItem="JB8-Ca-ZOK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yap-df-rGa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="323.5" y="318.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="1ti-0N-jnF">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXD-tg-HlD">
+                    <rect key="frame" x="51" y="26" width="273" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WVM-7D-Do4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="添加"/>
+                    <connections>
+                        <action selector="btuAddAction:" destination="-1" eventType="touchUpInside" id="MbL-Fe-Y00"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vXD-tg-HlD" firstAttribute="leading" secondItem="1ti-0N-jnF" secondAttribute="leading" constant="51" id="PGq-6v-55G"/>
+                <constraint firstItem="vXD-tg-HlD" firstAttribute="top" secondItem="1ti-0N-jnF" secondAttribute="top" constant="26" id="jvN-J7-CFn"/>
+                <constraint firstAttribute="trailing" secondItem="vXD-tg-HlD" secondAttribute="trailing" constant="51" id="zDY-ON-jbI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="23.5" y="998.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="24W-4T-hkq">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已选择0份档案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq9-KQ-wBf">
+                    <rect key="frame" x="10" y="4" width="338" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.88938210230000003" green="0.88938210230000003" blue="0.88938210230000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Iq9-KQ-wBf" firstAttribute="top" secondItem="24W-4T-hkq" secondAttribute="top" constant="4" id="1XU-GT-sQz"/>
+                <constraint firstAttribute="bottom" secondItem="Iq9-KQ-wBf" secondAttribute="bottom" constant="5" id="AeB-V4-OSd"/>
+                <constraint firstAttribute="trailing" secondItem="Iq9-KQ-wBf" secondAttribute="trailing" constant="27" id="Qi3-Yg-l5X"/>
+                <constraint firstItem="Iq9-KQ-wBf" firstAttribute="leading" secondItem="24W-4T-hkq" secondAttribute="leading" constant="10" id="uxO-WL-E46"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="89.5" y="768"/>
+        </view>
+    </objects>
+</document>

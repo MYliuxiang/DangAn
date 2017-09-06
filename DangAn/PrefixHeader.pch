@@ -1,0 +1,92 @@
+//
+//  PrefixHeader.pch
+//  DangAn
+//
+//  Created by lijiang on 16/5/30.
+//  Copyright © 2016年 lijiang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#ifdef __OBJC__
+
+#import "UIViewExt.h"
+#import "UIView+ViewController.h"
+#import "MJRefresh.h"
+#import "MyColor.h"
+#import "WXDataService.h"
+#import "MBProgressHUD+Add.h"
+#import "LXBaseModel.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "CALayer+Boder.h"
+#import "LX.h"
+#import "LJ.h"
+#import "LS.h"
+#import "NetWorkManager.h"
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+
+#define  kScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define  kScreenWidth [[UIScreen mainScreen] bounds].size.width
+
+#define NetWorkString    @"当前处于无网状态"
+//通知
+#define NotiCenter_TabbarSeleced @"NotiCenter_TabbarSeleced"  //Tabbar选中页面
+
+
+#define MAINURL  @"http://59.110.64.231:9000/index.php/Api/WebService/100000?AppID=dangan&AppSecret=0d366576bc2e2afb980b1bcdf1518e3c&from=ios&op="//主URL
+
+
+
+//色值
+#define UIColorFromRGB(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0x00FF00) >>  8))/255.0 \
+blue:((float)((rgbValue & 0x0000FF) >>  0))/255.0 \
+alpha:1.0]
+
+//常用属性
+#define UserDefaults  [NSUserDefaults standardUserDefaults]
+#define Color(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1.0]
+#define ColorRGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+#define ColorAlpha(r,g,b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:.8]
+
+
+//颜色
+#define Color_bg     UIColorFromRGB(0xf0f0f0)
+#define Color_nav    Color(54, 196, 165)  //Color(126,186,24)#BC8F8F
+#define Color_red    UIColorFromRGB(0xfe3a4b)
+#define Color_text   Color(102, 102, 102)
+#define Color_blue   Color(51, 122, 247)
+#define Color_FengeXiang   UIColorFromRGB(0xc8c8c8)
+
+
+//---------------------当前系统版本------------------
+#define  kVersion [[[UIDevice currentDevice] systemVersion] floatValue]
+
+//参考的屏幕宽度和高度 - 适配尺寸
+#define referenceBoundsHeight 568.0
+#define referenceBoundsWight 320.0
+#define ratioHeight kScreenHeight/referenceBoundsHeight
+#define ratioWidth kScreenWidth/referenceBoundsWight
+
+
+
+
+
+
+//取消nslog打印信息
+#define IS_ENABLE_DEBUG_LOG  1
+#if IS_ENABLE_DEBUG_LOG
+
+#define NSLog(...) NSLog(__VA_ARGS__)
+
+#else
+
+#define NSLog(...) {}
+
+#endif

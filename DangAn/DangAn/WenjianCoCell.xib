@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WenjianCoCell">
+            <rect key="frame" x="0.0" y="0.0" width="209" height="216"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="209" height="216"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="自主背景" translatesAutoresizingMaskIntoConstraints="NO" id="MRw-z2-m82">
+                        <rect key="frame" x="0.0" y="0.0" width="209" height="191"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJN-BN-Kom">
+                        <rect key="frame" x="92" y="95.5" width="25" height="25"/>
+                        <state key="normal" image="选择"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-rc-Zm7">
+                        <rect key="frame" x="10" y="191" width="199" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.77520032051282051" green="0.18176503470428099" blue="0.21197153932374518" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6G-a5-fWg">
+                        <rect key="frame" x="0.0" y="166" width="209" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="o30-71-LZp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YRM-rc-Zm7" secondAttribute="bottom" id="1ES-4g-otc"/>
+                <constraint firstAttribute="trailing" secondItem="YRM-rc-Zm7" secondAttribute="trailing" id="5Uv-TK-8Ms"/>
+                <constraint firstItem="YRM-rc-Zm7" firstAttribute="top" secondItem="w6G-a5-fWg" secondAttribute="bottom" id="7zf-5U-7Ih"/>
+                <constraint firstItem="XJN-BN-Kom" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="C1j-8p-jax"/>
+                <constraint firstItem="XJN-BN-Kom" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Rtq-gv-oFx"/>
+                <constraint firstItem="MRw-z2-m82" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vc0-dr-9fu"/>
+                <constraint firstItem="w6G-a5-fWg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Wui-ij-fjk"/>
+                <constraint firstItem="YRM-rc-Zm7" firstAttribute="top" secondItem="MRw-z2-m82" secondAttribute="bottom" id="XRo-YW-AKp"/>
+                <constraint firstItem="YRM-rc-Zm7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="bQR-A0-Dk4"/>
+                <constraint firstAttribute="bottom" secondItem="MRw-z2-m82" secondAttribute="bottom" constant="25" id="lXf-S0-er1"/>
+                <constraint firstItem="MRw-z2-m82" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="x2i-HP-OX4"/>
+                <constraint firstAttribute="trailing" secondItem="MRw-z2-m82" secondAttribute="trailing" id="x7P-Pk-wEv"/>
+                <constraint firstAttribute="trailing" secondItem="w6G-a5-fWg" secondAttribute="trailing" id="ydF-Wm-IOY"/>
+            </constraints>
+            <size key="customSize" width="209" height="216"/>
+            <connections>
+                <outlet property="imgView" destination="MRw-z2-m82" id="SZf-Vy-XTH"/>
+                <outlet property="seleImg" destination="XJN-BN-Kom" id="FwB-ng-8Vt"/>
+                <outlet property="shuliang" destination="w6G-a5-fWg" id="1zd-ao-LZL"/>
+                <outlet property="time" destination="YRM-rc-Zm7" id="NRJ-Ze-eTr"/>
+            </connections>
+            <point key="canvasLocation" x="203.5" y="312"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="自主背景" width="320" height="228"/>
+        <image name="选择" width="25" height="25"/>
+    </resources>
+</document>

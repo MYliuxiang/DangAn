@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeAlert">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="539"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ec-Gl-7G2">
+                    <rect key="frame" x="280" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0t7-2U-D7f"/>
+                        <constraint firstAttribute="width" constant="40" id="fAV-Ap-7pM"/>
+                    </constraints>
+                    <state key="normal" image="关闭按钮"/>
+                    <connections>
+                        <action selector="closeAC:" destination="iN0-l3-epB" eventType="touchUpInside" id="qbN-Nf-OFN"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="档案收取" translatesAutoresizingMaskIntoConstraints="NO" id="12J-z1-zZy">
+                    <rect key="frame" x="65" y="24" width="190" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="ors-CX-xQy"/>
+                        <constraint firstAttribute="width" constant="190" id="pED-Bg-ZLG"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0T5-H8-Ldi">
+                    <rect key="frame" x="85" y="270" width="150" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="1Dz-ds-8sJ"/>
+                        <constraint firstAttribute="height" constant="35" id="yni-IK-mCD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="我要下单"/>
+                    <connections>
+                        <action selector="buttonAC:" destination="iN0-l3-epB" eventType="touchUpInside" id="ddp-2i-1l5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4R-iX-09X">
+                    <rect key="frame" x="116" y="326" width="89" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DaY-do-6AY"/>
+                        <constraint firstAttribute="width" constant="89" id="NHI-Vf-fcb"/>
+                    </constraints>
+                    <state key="normal" title="VIP业务">
+                        <color key="titleColor" red="0.5607843137254902" green="0.396078431372549" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonAC1:" destination="iN0-l3-epB" eventType="touchUpInside" id="E1H-gG-vlF"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="档案收取" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNh-yC-cNx">
+                    <rect key="frame" x="65" y="185" width="190" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Bjz-9n-vYU"/>
+                        <constraint firstAttribute="width" constant="190" id="oZB-s8-MYd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.5607843137254902" green="0.396078431372549" blue="0.20784313725490197" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="分割线" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-k9-dSA">
+                    <rect key="frame" x="65" y="162" width="190" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="CGY-Sf-ItD"/>
+                        <constraint firstAttribute="height" constant="10" id="HbF-3v-WSI"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="前往客户指定地点\n收取资料" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJX-IP-bnV">
+                    <rect key="frame" x="46" y="226" width="229" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="229" id="RLM-Kd-bOO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="BNh-yC-cNx" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2uT-Lc-q9D"/>
+                <constraint firstItem="kJX-IP-bnV" firstAttribute="top" secondItem="BNh-yC-cNx" secondAttribute="bottom" constant="20" id="4CQ-DX-srY"/>
+                <constraint firstItem="qPJ-k9-dSA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Bkx-hr-xGr"/>
+                <constraint firstItem="f4R-iX-09X" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="C0M-m5-91j"/>
+                <constraint firstItem="12J-z1-zZy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dq1-GW-y7G"/>
+                <constraint firstItem="kJX-IP-bnV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Hk5-UG-CS1"/>
+                <constraint firstItem="9Ec-Gl-7G2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tez-WR-dbM"/>
+                <constraint firstItem="12J-z1-zZy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="exe-nZ-8KJ"/>
+                <constraint firstItem="qPJ-k9-dSA" firstAttribute="top" secondItem="12J-z1-zZy" secondAttribute="bottom" constant="8" id="f0f-yY-5zO"/>
+                <constraint firstItem="0T5-H8-Ldi" firstAttribute="top" secondItem="kJX-IP-bnV" secondAttribute="bottom" constant="30" id="hKf-JS-0fR"/>
+                <constraint firstAttribute="trailing" secondItem="9Ec-Gl-7G2" secondAttribute="trailing" id="nNL-1N-sTZ"/>
+                <constraint firstItem="f4R-iX-09X" firstAttribute="top" secondItem="0T5-H8-Ldi" secondAttribute="bottom" constant="20" id="vJZ-4b-vy0"/>
+                <constraint firstItem="0T5-H8-Ldi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="w8e-3Y-mnY"/>
+                <constraint firstItem="BNh-yC-cNx" firstAttribute="top" secondItem="qPJ-k9-dSA" secondAttribute="bottom" constant="13" id="yJr-WR-Nv1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="0T5-H8-Ldi" id="5Hn-t4-yub"/>
+                <outlet property="button1" destination="f4R-iX-09X" id="tz2-v3-NNm"/>
+                <outlet property="contentLabel" destination="kJX-IP-bnV" id="zZV-UN-xWE"/>
+                <outlet property="titleImage" destination="12J-z1-zZy" id="cqP-IA-abm"/>
+                <outlet property="titleLabel" destination="BNh-yC-cNx" id="QZs-Ej-qN6"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="190.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="关闭按钮" width="17" height="17"/>
+        <image name="分割线" width="190" height="10"/>
+        <image name="档案收取" width="190" height="130"/>
+    </resources>
+</document>

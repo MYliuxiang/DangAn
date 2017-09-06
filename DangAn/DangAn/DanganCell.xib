@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="85" id="KGk-i7-Jjw" customClass="DanganCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rg3-gx-8x4">
+                        <rect key="frame" x="16" y="16" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="EtP-bL-lF2"/>
+                            <constraint firstAttribute="width" constant="50" id="zZw-Zz-8nH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0v-oo-yxn">
+                        <rect key="frame" x="74" y="16" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NI-N5-VK0">
+                        <rect key="frame" x="74" y="42" width="31" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.10358866141911176" green="0.10540741071508425" blue="0.11388221153846156" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k8-Xd-3wa">
+                        <rect key="frame" x="272" y="28" width="30" height="30"/>
+                        <color key="tintColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal">
+                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rg3-gx-8x4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="ILI-wg-d6b"/>
+                    <constraint firstItem="rg3-gx-8x4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="SA1-lX-EKd"/>
+                    <constraint firstItem="C0v-oo-yxn" firstAttribute="leading" secondItem="rg3-gx-8x4" secondAttribute="trailing" constant="8" id="cqA-Up-QLN"/>
+                    <constraint firstItem="5NI-N5-VK0" firstAttribute="top" secondItem="C0v-oo-yxn" secondAttribute="bottom" constant="8" id="fAD-fC-Al2"/>
+                    <constraint firstItem="C0v-oo-yxn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="hz3-M9-EGd"/>
+                    <constraint firstItem="5NI-N5-VK0" firstAttribute="leading" secondItem="rg3-gx-8x4" secondAttribute="trailing" constant="8" id="ieA-Ck-JfB"/>
+                    <constraint firstItem="3k8-Xd-3wa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qQw-e1-kax"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3k8-Xd-3wa" secondAttribute="trailing" constant="10" id="skk-hC-Mc1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="count" destination="3k8-Xd-3wa" id="4kJ-rw-LvP"/>
+                <outlet property="imgview" destination="rg3-gx-8x4" id="G5x-v4-nnZ"/>
+                <outlet property="riqi" destination="5NI-N5-VK0" id="HjO-cZ-xMo"/>
+                <outlet property="title" destination="C0v-oo-yxn" id="5Na-H6-Ote"/>
+            </connections>
+            <point key="canvasLocation" x="421" y="256.5"/>
+        </tableViewCell>
+    </objects>
+</document>

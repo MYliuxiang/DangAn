@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AnimationAlert">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="371"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2x-J9-k8p">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="371"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVx-eC-tAl">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="371"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="KZ2-yI-YVV"/>
+                            </connections>
+                        </webView>
+                        <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-1D-Vbf">
+                            <rect key="frame" x="320" y="0.0" width="320" height="371"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="B3H-nW-e5r"/>
+                            </connections>
+                        </webView>
+                        <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Va9-EN-kPE">
+                            <rect key="frame" x="640" y="0.0" width="320" height="371"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="bSM-0y-7iy"/>
+                            </connections>
+                        </webView>
+                        <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mda-mL-3kh">
+                            <rect key="frame" x="960" y="0.0" width="320" height="371"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="ACY-vj-p0x"/>
+                            </connections>
+                        </webView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CWk-1D-Vbf" firstAttribute="height" secondItem="N2x-J9-k8p" secondAttribute="height" id="3XP-LU-hWB"/>
+                        <constraint firstAttribute="bottom" secondItem="Va9-EN-kPE" secondAttribute="bottom" id="AWT-E3-R0g"/>
+                        <constraint firstAttribute="bottom" secondItem="CWk-1D-Vbf" secondAttribute="bottom" id="ECj-ih-GVK"/>
+                        <constraint firstAttribute="bottom" secondItem="mda-mL-3kh" secondAttribute="bottom" id="Hj9-vA-Cze"/>
+                        <constraint firstItem="CWk-1D-Vbf" firstAttribute="leading" secondItem="qVx-eC-tAl" secondAttribute="trailing" id="Uy9-fH-wFZ"/>
+                        <constraint firstItem="qVx-eC-tAl" firstAttribute="width" secondItem="N2x-J9-k8p" secondAttribute="width" id="VKn-wb-Pfb"/>
+                        <constraint firstItem="Va9-EN-kPE" firstAttribute="top" secondItem="N2x-J9-k8p" secondAttribute="top" id="VqY-Aj-dGa"/>
+                        <constraint firstItem="Va9-EN-kPE" firstAttribute="leading" secondItem="CWk-1D-Vbf" secondAttribute="trailing" id="W6H-Nv-JwN"/>
+                        <constraint firstAttribute="trailing" secondItem="mda-mL-3kh" secondAttribute="trailing" id="WcV-TD-IfS"/>
+                        <constraint firstItem="Va9-EN-kPE" firstAttribute="height" secondItem="N2x-J9-k8p" secondAttribute="height" id="aMh-Cb-Ay5"/>
+                        <constraint firstItem="qVx-eC-tAl" firstAttribute="height" secondItem="N2x-J9-k8p" secondAttribute="height" id="atq-ZK-OdE"/>
+                        <constraint firstItem="CWk-1D-Vbf" firstAttribute="leading" secondItem="qVx-eC-tAl" secondAttribute="trailing" id="ggo-Iu-gIn"/>
+                        <constraint firstItem="mda-mL-3kh" firstAttribute="height" secondItem="N2x-J9-k8p" secondAttribute="height" id="hwY-et-wrM"/>
+                        <constraint firstItem="Va9-EN-kPE" firstAttribute="width" secondItem="N2x-J9-k8p" secondAttribute="width" id="iCz-Ql-68q"/>
+                        <constraint firstItem="CWk-1D-Vbf" firstAttribute="top" secondItem="N2x-J9-k8p" secondAttribute="top" id="k39-fq-S0z"/>
+                        <constraint firstItem="mda-mL-3kh" firstAttribute="leading" secondItem="Va9-EN-kPE" secondAttribute="trailing" id="k3g-A8-WWK"/>
+                        <constraint firstItem="mda-mL-3kh" firstAttribute="leading" secondItem="Va9-EN-kPE" secondAttribute="trailing" id="lBM-VJ-UBC"/>
+                        <constraint firstItem="Va9-EN-kPE" firstAttribute="leading" secondItem="CWk-1D-Vbf" secondAttribute="trailing" id="lRL-fu-4iz"/>
+                        <constraint firstAttribute="bottom" secondItem="qVx-eC-tAl" secondAttribute="bottom" id="m8A-7Z-f5H"/>
+                        <constraint firstItem="CWk-1D-Vbf" firstAttribute="width" secondItem="N2x-J9-k8p" secondAttribute="width" id="nK2-V8-M7h"/>
+                        <constraint firstItem="mda-mL-3kh" firstAttribute="top" secondItem="N2x-J9-k8p" secondAttribute="top" id="nV3-75-50S"/>
+                        <constraint firstItem="qVx-eC-tAl" firstAttribute="top" secondItem="N2x-J9-k8p" secondAttribute="top" id="oJm-14-brr"/>
+                        <constraint firstItem="mda-mL-3kh" firstAttribute="width" secondItem="N2x-J9-k8p" secondAttribute="width" id="pxm-UE-JR9"/>
+                        <constraint firstItem="qVx-eC-tAl" firstAttribute="leading" secondItem="N2x-J9-k8p" secondAttribute="leading" id="twy-nI-ixd"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="g4g-jJ-Eqg"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="N2x-J9-k8p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Brt-Cn-B1p"/>
+                <constraint firstItem="N2x-J9-k8p" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QhW-w7-4aM"/>
+                <constraint firstAttribute="trailing" secondItem="N2x-J9-k8p" secondAttribute="trailing" id="S4v-JE-x4D"/>
+                <constraint firstAttribute="bottom" secondItem="N2x-J9-k8p" secondAttribute="bottom" id="bwW-S8-ceH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="scrollView" destination="N2x-J9-k8p" id="QeG-gY-iGE"/>
+                <outlet property="web1" destination="qVx-eC-tAl" id="ch4-jW-YPT"/>
+                <outlet property="web2" destination="CWk-1D-Vbf" id="Kty-nb-KI1"/>
+                <outlet property="web3" destination="Va9-EN-kPE" id="wbH-cA-qif"/>
+                <outlet property="web4" destination="mda-mL-3kh" id="Mri-au-Mqt"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="21.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="oMu-Ui-ctP" customClass="FailAlert">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="177"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nto-sQ-Wnw">
+                    <rect key="frame" x="0.0" y="132" width="320" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="eZA-4H-MOP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="OK"/>
+                    <connections>
+                        <action selector="doneAC:" destination="oMu-Ui-ctP" eventType="touchUpInside" id="Vbj-hb-lLZ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uVR-TC-NAC">
+                    <rect key="frame" x="0.0" y="131" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="NVX-4q-0a6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="未添加收获地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHG-ep-CnD">
+                    <rect key="frame" x="94" y="78" width="133" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 添加" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYn-o3-GAm">
+                    <rect key="frame" x="139" y="25" width="43" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xHG-ep-CnD" firstAttribute="top" secondItem="YYn-o3-GAm" secondAttribute="bottom" constant="30" id="3BS-9l-4Ka"/>
+                <constraint firstAttribute="trailing" secondItem="uVR-TC-NAC" secondAttribute="trailing" id="MxY-GG-Itl"/>
+                <constraint firstItem="Nto-sQ-Wnw" firstAttribute="leading" secondItem="oMu-Ui-ctP" secondAttribute="leading" id="SoR-8G-80h"/>
+                <constraint firstItem="uVR-TC-NAC" firstAttribute="leading" secondItem="oMu-Ui-ctP" secondAttribute="leading" id="YZE-7g-uWO"/>
+                <constraint firstItem="YYn-o3-GAm" firstAttribute="centerX" secondItem="oMu-Ui-ctP" secondAttribute="centerX" id="bBD-lz-dXd"/>
+                <constraint firstItem="xHG-ep-CnD" firstAttribute="centerX" secondItem="oMu-Ui-ctP" secondAttribute="centerX" id="cbx-D6-bz7"/>
+                <constraint firstItem="uVR-TC-NAC" firstAttribute="top" secondItem="xHG-ep-CnD" secondAttribute="bottom" constant="30" id="cl4-CT-Fgm"/>
+                <constraint firstItem="Nto-sQ-Wnw" firstAttribute="top" secondItem="uVR-TC-NAC" secondAttribute="bottom" id="f2P-bH-p13"/>
+                <constraint firstItem="YYn-o3-GAm" firstAttribute="top" secondItem="oMu-Ui-ctP" secondAttribute="top" constant="25" id="lil-CX-mhx"/>
+                <constraint firstAttribute="trailing" secondItem="Nto-sQ-Wnw" secondAttribute="trailing" id="snt-uF-U2P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button1" destination="Nto-sQ-Wnw" id="GcH-DN-tFl"/>
+                <outlet property="messageLabel" destination="xHG-ep-CnD" id="pi3-R2-Tsu"/>
+                <outlet property="titleLabel" destination="YYn-o3-GAm" id="JPf-EW-5k9"/>
+            </connections>
+            <point key="canvasLocation" x="531" y="129.5"/>
+        </view>
+    </objects>
+</document>
